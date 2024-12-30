@@ -151,7 +151,7 @@ function useIMask<
       mask.off('accept', _onAccept);
       mask.off('complete', _onComplete);
     };
-  }, [_onAccept, _onComplete]);
+  }, [_onAccept, _onComplete, maskRef.current]);
 
   useEffect(() => _destroyMask, [_destroyMask]);
 
